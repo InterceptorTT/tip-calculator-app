@@ -1,0 +1,161 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p, ol, ul{
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul{
+    list-style-type: none;
+}
+
+img{
+    height: auto;
+}
+/* Container */
+body{
+    background:  hsl(185, 41%, 84%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #container{
+        text-align: center;
+        h1{
+            padding: 2rem;
+            font-size: 1.5rem;
+            color: hsl(186, 14%, 43%);
+        }
+        #hero{
+            padding: 2rem;
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            #main{
+                background: white;
+                padding: 2rem;
+                text-align: left;
+                >div{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                }
+                #bill{
+                    div{
+                        width: 100%;
+                         svg{
+                            transform: translateX(30px) translateY(5px);
+                        }
+                        input{
+                            padding: 0.5rem;
+                            border-radius: 5px;
+                            background: hsl(189, 41%, 97%);
+                            direction: rtl;
+                        }
+                    }
+                }
+                #tips{
+                    #tips-button{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        gap: 0.75rem;
+                        padding: 0.35rem;
+                        button{
+                            cursor: pointer;
+                            background: hsl(183, 100%, 15%);
+                            color: white;
+                            font-weight: 600;
+                            padding: 0.5rem;
+                            width: 5rem;
+                            border-radius: 10px;
+                        }
+                        button:hover{
+                            background: hsl(172, 67%, 45%);
+                        }
+                        
+                    }
+                }
+                #people{
+                    div{
+                        width: 100%;
+                        svg{
+                            transform: translateX(30px) translateY(5px);
+                        }
+                        input{
+                            padding: 0.5rem;
+                            border-radius: 5px;
+                            background: hsl(189, 41%, 97%);
+                            direction: rtl;
+
+                        }
+                    }
+                }
+            }
+            #side{
+                padding: 2rem;
+                text-align: left;
+                background: hsl(183, 100%, 15%);
+                border-radius: 10px;
+                >div{
+                    padding: 2rem;
+                    margin: 1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 3rem;
+                }
+                #tip-amount{
+                    color: white;
+                    span{
+                        color: hsl(185, 41%, 84%);
+                    }
+                    div{
+                        font-size: 2rem;
+                        font-weight: 900;
+                        color: hsl(172, 67%, 45%);
+                    }
+                }
+                #total{
+                    color: white;
+                    span{
+                        color: hsl(185, 41%, 84%);
+                    }
+                    div{
+                        font-size: 2rem;
+                        font-weight: 900;
+                        color: hsl(172, 67%, 45%);
+                    }
+
+                }
+                button{
+                    padding: 0.5rem;
+                    background: hsl(172, 67%, 45%);
+                    border-radius: 10px;
+                    width: 90%;
+                    margin: 1rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+body{
+    #container{
+        #hero{
+            flex-direction: column;
+        }
+    }
+}
+}
